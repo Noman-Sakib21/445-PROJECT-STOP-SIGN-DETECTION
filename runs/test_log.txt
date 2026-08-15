@@ -258,3 +258,7 @@ Speed: 3.0ms preprocess, 53.9ms inference, 1.2ms postprocess per image at shape 
 Detected 1 stop sign(s).
 Saved to: C:\CSE445\445 PROJECT STOP SIGN DETECTION\runs\detections\stop_015_detected.jpg
 [Sat 08/15/2026 17:34:58.02] Dragged-file finished, exit 0 
+[Sat 08/15/2026 22:09:14.65] Started. Arg: [C:\CSE445\445 PROJECT STOP SIGN DETECTION\new untested image\images (1).jpeg] 
+
+0: 640x640 1 stop_sign, 134.7ms
+Speed: 9.0ms preprocess, 134.7ms inference, 13.5ms postprocess per image at shape (1, 3, 640, 640)
