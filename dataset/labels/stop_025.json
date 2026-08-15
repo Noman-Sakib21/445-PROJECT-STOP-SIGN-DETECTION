@@ -1,0 +1,28 @@
+{
+  "version": "7.0.4",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "stop_sign",
+      "points": [
+        [
+          2286.5000000000005,
+          2997.5
+        ],
+        [
+          3086.5000000000005,
+          4337.5
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "stop_025.jpg",
+  "imageData": null,
+  "imageHeight": 7895,
+  "imageWidth": 5213
+}
