@@ -10,23 +10,79 @@ echo.
 
 REM ---- Locate this project folder ----
 set "PROJECT=%~dp0.."
+set "INSTALLER=%PROJECT%\python-3.14.7-amd64.exe"
 echo Project folder: %PROJECT%
 echo.
 
-REM ---- Check Python is installed ----
-where python >nul 2>&1
-if errorlevel 1 (
-    echo [ERROR] Python is NOT installed or not on PATH.
+REM ---- Find a Python 3.11+ interpreter (py launcher first, then python) ----
+set "PY="
+set "PY_OK=0"
+
+where py >nul 2>&1
+if not errorlevel 1 (
+    py -c "import sys; print(sys.executable)" >"%TEMP%\ssd_py.txt" 2>nul
+    if not errorlevel 1 (
+        for /f "usebackq delims=" %%i in ("%TEMP%\ssd_py.txt") do set "PY=%%i"
+    )
+)
+
+if not defined PY (
+    where python >nul 2>&1
+    if not errorlevel 1 (
+        python -c "import sys; print(sys.executable)" >"%TEMP%\ssd_py.txt" 2>nul
+        if not errorlevel 1 (
+            for /f "usebackq delims=" %%i in ("%TEMP%\ssd_py.txt") do set "PY=%%i"
+        )
+    )
+)
+del "%TEMP%\ssd_py.txt" >nul 2>&1
+
+if defined PY (
+    "%PY%" -c "import sys; sys.exit(0 if sys.version_info >= (3, 11) else 1)" >nul 2>&1
+    if not errorlevel 1 set "PY_OK=1"
+)
+
+REM ---- If no usable Python found, install the bundled Python 3.14 silently ----
+if not "%PY_OK%"=="1" (
+    echo No usable Python 3.11+ found. Installing the bundled Python 3.14...
     echo.
-    echo Please install Python 3.10 or newer from https://www.python.org/downloads/
-    echo IMPORTANT: tick "Add Python to PATH" during installation.
+    if not exist "%INSTALLER%" (
+        echo [ERROR] python-3.14.7-amd64.exe was not found in the project folder.
+        echo.
+        echo Please put it back in the project folder, or download Python 3.14
+        echo from https://www.python.org/downloads/ and run this setup again.
+        echo.
+        pause
+        exit /b 1
+    )
+    "%INSTALLER%" /quiet InstallAllUsers=0 PrependPath=1 Include_launcher=1 Include_test=0 Include_doc=0 Include_pip=1
+    echo Installer finished, exit code %errorlevel%.
     echo.
-    echo Then run this setup again.
+
+    if exist "%LocalAppData%\Programs\Python\Python314\python.exe" (
+        set "PY=%LocalAppData%\Programs\Python\Python314\python.exe"
+    ) else (
+        echo [ERROR] Python was not found after running the installer.
+        pause
+        exit /b 1
+    )
+    "%PY%" -c "import sys; sys.exit(0 if sys.version_info >= (3, 11) else 1)" >nul 2>&1
+    if errorlevel 1 (
+        echo [ERROR] The installed Python is older than 3.11.
+        pause
+        exit /b 1
+    )
+    set "PY_OK=1"
+)
+
+if not "%PY_OK%"=="1" (
+    echo [ERROR] Could not find or install a Python 3.11+ interpreter.
     pause
     exit /b 1
 )
-echo [OK] Python found.
-python --version
+
+echo [OK] Python found: %PY%
+"%PY%" --version
 echo.
 
 REM ---- Create virtual environment ----
@@ -34,7 +90,7 @@ if exist "%PROJECT%\venv\Scripts\python.exe" (
     echo [SKIP] venv already exists.
 ) else (
     echo Creating virtual environment...
-    python -m venv "%PROJECT%\venv"
+    "%PY%" -m venv "%PROJECT%\venv"
     if errorlevel 1 (
         echo [ERROR] Failed to create venv.
         pause
