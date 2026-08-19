@@ -3,8 +3,8 @@ chcp 65001 >nul
 set "ROOT=%~dp0"
 set "LOGFILE=%ROOT%runs\test_log.txt"
 set "PY=%ROOT%venv\Scripts\python.exe"
-set "SCRIPT=%ROOT%scripts\test_single.py"
-set "PS1=%ROOT%scripts\pick_image.ps1"
+set "SCRIPT=%ROOT%support\test_single.py"
+set "PS1=%ROOT%support\pick_image.ps1"
 set "PSOUT=%TEMP%\picker_output.txt"
 
 del "%PSOUT%" >nul 2>&1

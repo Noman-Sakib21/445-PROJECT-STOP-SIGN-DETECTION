@@ -1,0 +1,16 @@
+# Virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# Training run artifacts (weights, plots, logs)
+runs/
+!runs/detections/
+
+# OS / editor files
+Thumbs.db
+.DS_Store
+
+# Misc local files
+train_pid.txt
+logs_train5_err.txt
