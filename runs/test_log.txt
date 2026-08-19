@@ -262,3 +262,90 @@ Saved to: C:\CSE445\445 PROJECT STOP SIGN DETECTION\runs\detections\stop_015_det
 
 0: 640x640 1 stop_sign, 134.7ms
 Speed: 9.0ms preprocess, 134.7ms inference, 13.5ms postprocess per image at shape (1, 3, 640, 640)
+[Wed 08/19/2026 17:55:28.59] Started. Arg: [C:\CSE445\445 PROJECT STOP SIGN DETECTION\new untested image\bertrand-colombo-0kBE1SzRqHI-unsplash.jpg] 
+
+0: 640x448 (no detections), 90.3ms
+Speed: 6.8ms preprocess, 90.3ms inference, 6.6ms postprocess per image at shape (1, 3, 640, 448)
+Detected 0 stop sign(s).
+Saved to: C:\CSE445\445 PROJECT STOP SIGN DETECTION\runs\detections\bertrand-colombo-0kBE1SzRqHI-unsplash_detected.jpg
+[Wed 08/19/2026 17:55:28.59] Dragged-file finished, exit 0 
+[Wed 08/19/2026 17:55:51.95] Started. Arg: [C:\CSE445\445 PROJECT STOP SIGN DETECTION\new untested image\images (1).jpeg] 
+
+0: 640x640 1 stop_sign, 61.4ms
+Speed: 3.5ms preprocess, 61.4ms inference, 3.8ms postprocess per image at shape (1, 3, 640, 640)
+Detected 1 stop sign(s).
+Saved to: C:\CSE445\445 PROJECT STOP SIGN DETECTION\runs\detections\images (1)_detected.jpeg
+[Wed 08/19/2026 17:55:51.95] Dragged-file finished, exit 0 
+[Wed 08/19/2026 17:56:06.46] Started. Arg: [C:\CSE445\445 PROJECT STOP SIGN DETECTION\new untested image\images.png] 
+
+0: 640x608 1 stop_sign, 60.6ms
+Speed: 2.4ms preprocess, 60.6ms inference, 1.3ms postprocess per image at shape (1, 3, 640, 608)
+Detected 1 stop sign(s).
+Saved to: C:\CSE445\445 PROJECT STOP SIGN DETECTION\runs\detections\images_detected.png
+[Wed 08/19/2026 17:56:06.46] Dragged-file finished, exit 0 
+[Wed 08/19/2026 17:59:43.50] Started. Arg: [] 
+[Wed 08/19/2026 18:00:16.70] Picker finished, exit 0 
+[Wed 08/19/2026 18:00:16.70] Processing: C:\CSE445\445 PROJECT STOP SIGN DETECTION\new untested image\ragnar-rebase-Ra_5w_B-Tes-unsplash.jpg 
+
+0: 640x480 (no detections), 50.2ms
+Speed: 3.0ms preprocess, 50.2ms inference, 0.7ms postprocess per image at shape (1, 3, 640, 480)
+Detected 0 stop sign(s).
+Saved to: C:\CSE445\445 PROJECT STOP SIGN DETECTION\runs\detections\ragnar-rebase-Ra_5w_B-Tes-unsplash_detected.jpg
+[Wed 08/19/2026 18:00:25.91] Finished, exit 0 
+[Wed 08/19/2026 18:09:13.79] Started. Arg: [] 
+[Wed 08/19/2026 18:09:53.25] Picker finished, exit 0 
+[Wed 08/19/2026 18:09:53.25] Processing: C:\CSE445\445 PROJECT STOP SIGN DETECTION\new untested image\images (1).jpeg 
+
+0: 640x640 1 stop_sign, 68.9ms
+Speed: 3.6ms preprocess, 68.9ms inference, 1.3ms postprocess per image at shape (1, 3, 640, 640)
+Detected 1 stop sign(s).
+Saved to: C:\CSE445\445 PROJECT STOP SIGN DETECTION\runs\detections\images (1)_detected.jpeg
+[Wed 08/19/2026 18:10:33.75] Finished, exit 0 
+[Wed 08/19/2026 18:10:52.91] Started. Arg: [C:\CSE445\445 PROJECT STOP SIGN DETECTION\new untested image\images.png] 
+
+0: 640x608 1 stop_sign, 64.3ms
+Speed: 3.2ms preprocess, 64.3ms inference, 1.3ms postprocess per image at shape (1, 3, 640, 608)
+Detected 1 stop sign(s).
+Saved to: C:\CSE445\445 PROJECT STOP SIGN DETECTION\runs\detections\images_detected.png
+[Wed 08/19/2026 18:10:52.91] Dragged-file finished, exit 0 
+[Wed 08/19/2026 18:12:59.64] Started. Arg: [] 
+[Wed 08/19/2026 18:13:22.34] Picker finished, exit 0 
+[Wed 08/19/2026 18:13:22.34] No file selected 
+[Wed 08/19/2026 18:13:50.07] Started. Arg: [] 
+[Wed 08/19/2026 18:14:16.29] Picker finished, exit 0 
+[Wed 08/19/2026 18:14:16.29] Processing: C:\CSE445\445 PROJECT STOP SIGN DETECTION\new untested image\images (1).jpeg 
+
+0: 640x640 1 stop_sign, 65.2ms
+Speed: 5.9ms preprocess, 65.2ms inference, 1.4ms postprocess per image at shape (1, 3, 640, 640)
+Detected 1 stop sign(s).
+Saved to: C:\CSE445\445 PROJECT STOP SIGN DETECTION\runs\detections\images (1)_detected.jpeg
+[Wed 08/19/2026 18:14:34.53] Finished, exit 0 
+[Wed 08/19/2026 18:14:43.90] Started. Arg: [C:\CSE445\445 PROJECT STOP SIGN DETECTION\new untested image\images.png] 
+
+0: 640x608 1 stop_sign, 61.6ms
+Speed: 3.5ms preprocess, 61.6ms inference, 1.3ms postprocess per image at shape (1, 3, 640, 608)
+Detected 1 stop sign(s).
+Saved to: C:\CSE445\445 PROJECT STOP SIGN DETECTION\runs\detections\images_detected.png
+[Wed 08/19/2026 18:14:43.90] Dragged-file finished, exit 0 
+[Wed 08/19/2026 18:17:39.71] Started. Arg: [] 
+[Wed 08/19/2026 18:17:55.66] Picker finished, exit 0 
+[Wed 08/19/2026 18:17:55.66] Processing: C:\CSE445\445 PROJECT STOP SIGN DETECTION\new untested image\images (1).jpeg 
+
+0: 640x640 1 stop_sign, 62.2ms
+Speed: 3.5ms preprocess, 62.2ms inference, 1.3ms postprocess per image at shape (1, 3, 640, 640)
+Detected 1 stop sign(s).
+Saved to: C:\CSE445\445 PROJECT STOP SIGN DETECTION\runs\detections\images (1)_detected.jpeg
+[Wed 08/19/2026 18:18:06.37] Finished, exit 0 
+[Wed 08/19/2026 18:19:43.02] Started. Arg: [] 
+[Wed 08/19/2026 18:20:10.64] Picker finished, exit 0 
+[Wed 08/19/2026 18:20:10.64] Processing: C:\CSE445\445 PROJECT STOP SIGN DETECTION\new untested image\images (1).jpeg 
+
+0: 640x640 1 stop_sign, 68.7ms
+Speed: 2.7ms preprocess, 68.7ms inference, 1.3ms postprocess per image at shape (1, 3, 640, 640)
+Detected 1 stop sign(s).
+Saved to: C:\CSE445\445 PROJECT STOP SIGN DETECTION\runs\detections\images (1)_detected.jpeg
+[Wed 08/19/2026 18:20:27.09] Finished, exit 0 
+[Wed 08/19/2026 18:20:36.67] Started. Arg: [C:\CSE445\445 PROJECT STOP SIGN DETECTION\new untested image\images.png] 
+
+0: 640x608 1 stop_sign, 61.9ms
+Speed: 3.4ms preprocess, 61.9ms inference, 1.0ms postprocess per image at shape (1, 3, 640, 608)
