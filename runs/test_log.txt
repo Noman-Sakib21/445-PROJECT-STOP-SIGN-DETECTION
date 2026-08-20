@@ -349,3 +349,26 @@ Saved to: C:\CSE445\445 PROJECT STOP SIGN DETECTION\runs\detections\images (1)_d
 
 0: 640x608 1 stop_sign, 61.9ms
 Speed: 3.4ms preprocess, 61.9ms inference, 1.0ms postprocess per image at shape (1, 3, 640, 608)
+[Thu 08/20/2026 11:25:59.41] Started. Arg: [] 
+[Thu 08/20/2026 11:26:23.01] Picker finished, exit 0 
+[Thu 08/20/2026 11:26:23.01] Processing: C:\CSE445\445 PROJECT STOP SIGN DETECTION\new untested image\images.jpeg 
+
+0: 640x480 2 stop_signs, 91.6ms
+Speed: 5.3ms preprocess, 91.6ms inference, 9.6ms postprocess per image at shape (1, 3, 640, 480)
+Detected 0 stop sign(s).
+Saved to: C:\CSE445\445 PROJECT STOP SIGN DETECTION\runs\detections\images_detected.jpeg
+[Thu 08/20/2026 11:26:40.22] Finished, exit 0 
+[Thu 08/20/2026 11:27:02.68] Started. Arg: [C:\CSE445\445 PROJECT STOP SIGN DETECTION\new untested image\images.png] 
+
+0: 640x608 1 stop_sign, 63.7ms
+Speed: 5.9ms preprocess, 63.7ms inference, 1.3ms postprocess per image at shape (1, 3, 640, 608)
+Detected 1 stop sign(s).
+Saved to: C:\CSE445\445 PROJECT STOP SIGN DETECTION\runs\detections\images_detected.png
+[Thu 08/20/2026 11:27:02.68] Dragged-file finished, exit 0 
+[Thu 08/20/2026 11:29:19.96] Started. Arg: [C:\CSE445\445 PROJECT STOP SIGN DETECTION\raw\stop_014.jpg] 
+
+0: 640x480 1 stop_sign, 51.6ms
+Speed: 2.7ms preprocess, 51.6ms inference, 1.1ms postprocess per image at shape (1, 3, 640, 480)
+Detected 1 stop sign(s).
+Saved to: C:\CSE445\445 PROJECT STOP SIGN DETECTION\runs\detections\stop_014_detected.jpg
+[Thu 08/20/2026 11:29:19.96] Dragged-file finished, exit 0 
